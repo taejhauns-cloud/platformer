@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/left_arrow.png" type="Texture" id=1]
+[ext_resource path="res://assets/right_arrow.png" type="Texture" id=2]
+[ext_resource path="res://assets/jump_arrow.png" type="Texture" id=3]
+[ext_resource path="res://src/Actors/TouchControls.gd" type="Script" id=4]
+
+[node name="TouchControls" type="CanvasLayer"]
+script = ExtResource( 4 )
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2( 50, 420 )
+scale = Vector2( 0.21, 0.21 )
+normal = ExtResource( 1 )
+action = "move_left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2( 295, 420 )
+scale = Vector2( 0.21, 0.21 )
+normal = ExtResource( 2 )
+action = "move_right"
+
+[node name="Jump" type="TouchScreenButton" parent="."]
+position = Vector2( 1011, 400 )
+scale = Vector2( 0.21, 0.21 )
+normal = ExtResource( 3 )
+action = "jump"
+
+[connection signal="pressed" from="Left" to="." method="_on_Left_pressed"]
+[connection signal="released" from="Left" to="." method="_on_Left_released"]
+[connection signal="pressed" from="Right" to="." method="_on_Right_pressed"]
+[connection signal="released" from="Right" to="." method="_on_Right_released"]
+[connection signal="pressed" from="Jump" to="." method="_on_Jump_pressed"]
+[connection signal="released" from="Jump" to="." method="_on_Jump_released"]

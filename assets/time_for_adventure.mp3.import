@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/time_for_adventure.mp3-b5d8933096607066aa34c93b9e5dc5c2.mp3str"
+
+[deps]
+
+source_file="res://assets/time_for_adventure.mp3"
+dest_files=[ "res://.import/time_for_adventure.mp3-b5d8933096607066aa34c93b9e5dc5c2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

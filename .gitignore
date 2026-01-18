@@ -1,0 +1,24 @@
+# Godot 3.x
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+
+# Build files
+*.apk
+*.exe
+*.zip
+*.app
+
+# Temporary files
+*.tmp
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large asset files (add if you have them)
+# *.wav
+# *.mp3
+# *.import
